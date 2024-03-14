@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>q4</title>
+<script src=="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1 align="center">Registration Form</h1>
+
+<form id='registration' action="" onSubmit="return formValidation();">
+<table border=0 align=center>
+<tr>
+<td><label for="stdname">student name:</label>
+<td><input type="text" id="stdname" size="20">
+</tr>
+<tr>
+<td><label for="regno">registeration no:</label>
+<td><input type="text" id="regno" size="9">
+</tr>
+<tr>
+<td><label for="dob">Date of birth:</label>
+<td><input type="date" id="dob">
+</tr>
+<tr>
+<td><label for="taddress">Temporary address:</label>
+<td><input type="text" id="taddress" size="50">
+</tr>
+<tr>
+<td><label for="paddress">Permanent address:</label>
+<td><input type="text" id="paddress" size="50">
+</tr>
+<tr>
+<td><label for="program">program:</label>
+<td><select id="program">
+<option selected="" value="Default">(Please select your program)</option>
+<option value="CS">computer science</option>
+<option value="CSS">computer science specialisation</option>
+<option value="IT">information technology</option>
+<option value="ECE">electronics and communication</option>
+<option value="EEE">electronics</option>
+<option value="ME">mechanical</option>
+<option value="CH">chemical</option>
+<option value="CI">civil</option>
+<option value="BI">biotech</option>
+</select></td>
+</tr>
+<tr>
+<td><label for="phone">phone no:</label>
+<td><input type="text" id="phone"size="10">
+</tr>
+<tr>
+<td><label for="email">Email:</label>
+<td><input type="text" id="email" size="50">
+</tr>
+<tr>
+<td><label id="gender">Gender:</label>
+<td><input type="radio" name="gender" value="Male"><span>Male</span><br>
+<input type="radio" name="gender" value="Female"><span>Female</span>
+</td>
+</tr>
+
+<tr>
+<td><label for="desc">About:</label>
+<td><textarea id="desc" id="desc"></textarea>
+</tr>
+<tr>
+<td colspan=2 align=center><input type="submit" id="submit" value="Submit">
+</tr>
+</table>
+</form>
+</body>
+</html>
